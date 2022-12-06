@@ -9,7 +9,7 @@ import pandas as pd
 import re
 
 read_cols = ['CLAVE_CLIENTE', 'NOMBRE_FISCAL', 'NOMBRE_COMERCIAL', 'DOMICILIO_FISCAL', 'DOMICILIO_ENTREGA', 'GOOGLE-FISCAL', 'GOOGLE-ENTREGA', 'DOMICILIO']
-input_table_1 = pd.read_excel('C:/Users/in/Documents/Datos 2022/Noviembre/PRUEBA 2 DOMICILIOS/UBICACIONES_FILTRADOS.xlsx')
+input_table_1 = pd.read_excel('C:/Users/in/Documents/google_response.xlsx')
 	
 def Convert(string):
     list1 = []
@@ -89,4 +89,4 @@ cols = [ 'CLAVE_CLIENTE', 'NOMBRE_FISCAL', 'NOMBRE_COMERCIAL',  'DOMICILIO_FISCA
 
 df = pd.DataFrame(data, columns = cols)
 
-df.to_excel('C:/Users/in/Documents/Datos 2022/Noviembre/PRUEBA 2 DOMICILIOS/FINAL_DOMICILIOS.xlsx')
+df.to_excel('C:/Users/in/Documents/google_json_extraction.xlsx')
